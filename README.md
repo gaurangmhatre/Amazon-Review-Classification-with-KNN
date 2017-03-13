@@ -3,9 +3,10 @@ Nearest Neighbor Classification algorithm
 
 ###Approach 1:###
 Accuracy: 0.5434
-Libraries used:​ numpy, scipy, nltk, heapq, string, collections
-Method of choice:
-Cosine_similarity with ​ CSR matrix​ for Training and Test data
+
+Libraries used:​ numpy, scipy, nltk, heapq, string, collections 
+
+Method of choice: Cosine_similarity with ​ CSR matrix​ for Training and Test data
 Number of features considered: ​ 6357
 
 Training data: [nrows 18506, ncols 6357, nnz 741757]
@@ -29,10 +30,13 @@ Steps:
 
 ###Approach 2:###
 Accuracy: 0.7459
+
 Libraries used:​ sklearn, numpy, scipy, nltk, heapq, string, collections
-Method of choice:
-Cosine_similarity with ​ CountVectorizer​ for Training and Test data
+
+Method of choice: Cosine_similarity with ​ CountVectorizer​ for Training and Test data
+
 Number of features considered: ​ 23398
+
 Steps:
 1. Read files train.dat, test.dat: we create a linesOfTrainData and linesOfTestData
 2. Initialize CountVectorizer(analyzer='word', lowercase = True, stop_words='english')
